@@ -9,20 +9,20 @@ public class Guessing_game
 		int i, guess;
 
 		System.out.println("--------------------------------Guessing Number Game---------------------------------------------\n");
-		System.out.println("\tA number is chosen"+ " between 1 to 100." + "Guess the number" + " within 5 trials.");
+		System.out.println("\tA number is chosen between 1 to 100. Guess the number within 5 trials.");
 		for (i = 0; i < K; i++) {
             System.out.println("\tGuess the number:");
 			guess = sc.nextInt();
 
 			if (number == guess) {
-				System.out.println("\tCongratulations!" + " You guessed the number.");
+				System.out.println("\tCongratulations! You guessed the number.");
 				break;
 			}
 			else if (number > guess && i != K - 1) {
-				System.out.println("\tThe number is " + "greater than " + guess  +"\n");
+				System.out.println("\tThe number is greater than " + guess  +"\n");
 			}
 			else if (number < guess && i != K - 1) {
-				System.out.println("\tThe number is" + " less than " + guess +"\n");
+				System.out.println("\tThe number is less than " + guess +"\n");
 			}
 		}
 		if (i == K) {
