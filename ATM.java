@@ -114,12 +114,7 @@ public class ATM {
     public static ArrayList<String> history=new ArrayList<String>();
     public static int balance=10000;
 
-    static void updatebalance(int dcash){
-        balance=balance+dcash;
-    }
-    static void showbalance(){
-        System.out.println(balance);
-    }
+    
     public static void InterfaceA(){
         Scanner sc=new Scanner(System.in);
         System.out.println("\t\t-----------------WELCOME TO ATM INTERFACE-------------------\n");
